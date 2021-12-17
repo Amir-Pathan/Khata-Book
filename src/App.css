@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cntrl{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cntrl h5{
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.autentication-box{
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  border: 2px solid black;
+  padding-left: 8%;
+  padding-top: 8%;
+  padding-right: 8%;
+  padding-bottom: 8%;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 20px 10px 20px 20px whitesmoke;
+}
+.color{
+  color: red;
+}
+.notValid{
+  margin-top: -8px;
+  color: red;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-bottom: 1px solid black;
+  background-color: burlywood;
+}
+.white{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.newAccount{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red{
+  color: red;
+  margin-top: -25px;
+}
+.icons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.center{
+  text-align: center;
+}
+.items{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  border-bottom: 1px solid black;
+  align-items: center;
+  cursor: pointer;
+}
+.items h3{
+  margin-left: 10%;
+}
+.user{
+  border : 1px solid black;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  border-radius: 41px;
+  /*background: #e0e0e0;*/
+  box-shadow:  25px 25px 49px #bebebe,
+             -25px -25px 49px #ffffff;
+}
+.user h3{
+  text-align: center;
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: aqua;
+  align-items: center;
+}
+.field{
+  width: 60%;
+}
+.showdow{
+  border-radius: 41px;
+  background: #e0e0e0;
+  box-shadow:  25px 25px 49px #bebebe,
+             -25px -25px 49px #ffffff;
 }

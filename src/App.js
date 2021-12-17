@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import React,{ useEffect } from 'react';
 import './App.css';
+import Autentication from './component/autentication';
+import store from './redux/store';
+import {Provider} from 'react-redux'
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Header from './component/header';
+import NewKhata from './component/newKhata';
+import UserDetails from './component/userDetails';
+import Search from './component/search';
 
 function App() {
+
+  useEffect(()=>{
+
+    const account=[]
+
+    const check=localStorage.getItem('account')
+    if(check===null){
+      localStorage.setItem('account',JSON.stringify(account))
+    }
+
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Provider store={store}>
+         <Router>
+          <Routes>
+            <Route path='/' element={<Autentication/>}/>
+            <Route path='/home' element={<Header/>}/>
+            <Route path='/newAccount' element={<NewKhata/>}/>
+            <Route path='/user' element={<UserDetails/>}/>
+            <Route path='/search' element={<Search/>}/>
+          </Routes>
+         </Router>
+       </Provider>
     </div>
   );
 }
