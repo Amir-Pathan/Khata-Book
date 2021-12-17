@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/khata-book/static/css/main.f7417fe8.chunk.css",
+    "main.js": "/khata-book/static/js/main.392274ca.chunk.js",
+    "main.js.map": "/khata-book/static/js/main.392274ca.chunk.js.map",
+    "runtime-main.js": "/khata-book/static/js/runtime-main.f17c7665.js",
+    "runtime-main.js.map": "/khata-book/static/js/runtime-main.f17c7665.js.map",
+    "static/js/2.171faadf.chunk.js": "/khata-book/static/js/2.171faadf.chunk.js",
+    "static/js/2.171faadf.chunk.js.map": "/khata-book/static/js/2.171faadf.chunk.js.map",
+    "static/js/3.9df36b53.chunk.js": "/khata-book/static/js/3.9df36b53.chunk.js",
+    "static/js/3.9df36b53.chunk.js.map": "/khata-book/static/js/3.9df36b53.chunk.js.map",
+    "index.html": "/khata-book/index.html",
+    "static/css/main.f7417fe8.chunk.css.map": "/khata-book/static/css/main.f7417fe8.chunk.css.map",
+    "static/js/2.171faadf.chunk.js.LICENSE.txt": "/khata-book/static/js/2.171faadf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f17c7665.js",
+    "static/js/2.171faadf.chunk.js",
+    "static/css/main.f7417fe8.chunk.css",
+    "static/js/main.392274ca.chunk.js"
+  ]
+}
